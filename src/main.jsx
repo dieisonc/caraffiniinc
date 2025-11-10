@@ -1,6 +1,8 @@
 import React from 'react'
-import { createRoot } from 'react-dom/client'
+import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
-import App from './ui/App'
-import './ui/styles.css'
-createRoot(document.getElementById('root')).render(<BrowserRouter><App/></BrowserRouter>)
+import App from './App.jsx'
+import './styles/index.css'
+import { useAuth } from './lib/authStore'
+function Init(){ const init = useAuth((s)=>s.init); React.useEffect(()=>{ init() }, []); return <App/> }
+ReactDOM.createRoot(document.getElementById('root')).render(<React.StrictMode><BrowserRouter><Init/></BrowserRouter></React.StrictMode>)
