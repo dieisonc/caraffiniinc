@@ -1,0 +1,1 @@
+export default function Dashboard(){return (<div><div className='header'><h1>Dashboard</h1></div><div className='card'>KPIs e gráficos</div></div>)}

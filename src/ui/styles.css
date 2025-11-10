@@ -1,0 +1,12 @@
+:root{--brand:#1f7a5c;--bg:#f6f9fb}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:#0f172a}
+.sidebar{width:260px;background:#fff;border-right:1px solid #e5e7eb;position:fixed;top:0;bottom:0;left:0;padding:24px 12px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:700;font-size:18px;color:var(--brand)}
+.main{margin-left:260px;padding:24px}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:16px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.kanban{display:grid;grid-template-columns:repeat(5,minmax(220px,1fr));gap:12px}
+.login-wrap{display:grid;place-items:center;min-height:100vh;background:linear-gradient(120deg,#eef7f2,#f6fbf8)}
+.login-card{width:100%;max-width:420px}
+.login-card .logo{justify-content:center;margin-bottom:8px}
+.login-card h2{margin:8px 0 16px 0;text-align:center}

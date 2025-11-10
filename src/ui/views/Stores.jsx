@@ -1,0 +1,1 @@
+export default function Stores(){return (<div><div className='header'><h1>Lojas & Usuários</h1></div><div className='card'>Gerencie lojas e usuários</div></div>)}

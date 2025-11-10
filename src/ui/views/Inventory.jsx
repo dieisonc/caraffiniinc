@@ -1,0 +1,1 @@
+export default function Inventory(){return (<div><div className='header'><h1>Estoque</h1></div><div className='card'>Materiais (código, descrição, unidade, qty)</div></div>)}
