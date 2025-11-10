@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "framework": "vite",
   "buildCommand": "npm run build",
   "installCommand": "npm install",
   "outputDirectory": "dist",
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
